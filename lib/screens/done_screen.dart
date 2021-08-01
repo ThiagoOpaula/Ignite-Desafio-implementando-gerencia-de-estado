@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import '../home_controller.dart';
 
 import '../shared/models/todo_item.dart';
 import 'components/todo_item_list_tile.dart';
 
 class DoneScreen extends StatefulWidget {
+  final HomeController controller;
   const DoneScreen({
     Key? key,
+    required this.controller,
     required this.itemList,
     required this.onResetItem,
     required this.onRemoveItem,
